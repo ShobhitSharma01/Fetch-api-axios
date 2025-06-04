@@ -1,0 +1,52 @@
+.Main {
+  background-color: #e6f9f9;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.data {
+  display: grid;
+  gap: 60px;
+  width: 100%;
+}
+.card {
+  background-color: white;
+  border: 2px solid #161616;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+.card button {
+  background-color: #3498db;
+  border: none;
+  padding: 8px 12px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.card button:hover {
+  background-color: #072335;
+}
+.loading-overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.spin-icon {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
